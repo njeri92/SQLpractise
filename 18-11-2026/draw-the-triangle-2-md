@@ -1,0 +1,11 @@
+link:https://www.hackerrank.com/challenges/draw-the-triangle-2/problem?isFullScreen=true
+
+intuition:start from 0 add one limit to 20 
+
+```sql 
+SET @star = 0;
+SELECT REPEAT('* ', @star := @star + 1)
+FROM information_schema.tables
+LIMIT 20;
+
+```
